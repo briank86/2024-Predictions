@@ -13,19 +13,13 @@ from sklearn.ensemble import RandomForestRegressor
 
 
 
-#this doesn't give every pitcher - also fangraphs data
-#pitchers = pitching_stats(2019, 2023)
-#batters = batting_stats(2019, 2023)
-
-
 # #gives every person that pitched - baseball reference
 # pit2019 = pitching_stats_bref(2019)
-# pit2020 = pitching_stats_bref(2020)
 # pit2021 = pitching_stats_bref(2021)
 # pit2022 = pitching_stats_bref(2022)
 # pit2023 = pitching_stats_bref(2023)
 
-# pitchers = pd.concat([pit2019, pit2020, pit2021, pit2022, pit2023])
+# pitchers = pd.concat([pit2019, pit2021, pit2022, pit2023])
 
 # #try batters later - it may have blocked me
 # hit2019 = batting_stats_bref(2019)
@@ -41,10 +35,6 @@ from sklearn.ensemble import RandomForestRegressor
 # batters.to_csv(r'C:\Users\brkea\Desktop\19-23_batters_season_stats.csv', index=False, sep=',', encoding='utf-8')
 
 
-
-
-
-#to make more advance can put punishments for age or injury - think about (need to do the simulation strategy?)
 
 pitchers = pd.read_csv('C:\\Users\\brkea\\Desktop\\19-23_pitchers_season_stats.csv')
 pitchers.fillna(0, inplace = True)
@@ -65,7 +55,7 @@ def stats2024(player):
         wt = dataframe[weight]
         return (val * wt).sum() / wt.sum()
     
-    #filtering 2020 and seasons with low 
+    #filtering seasons that ended early due to injuries which could mess up predictions
     ind = ind[ind['G'] > 13]
     
     #weighted average for most values (regular average for the rest) based on players previous performance
