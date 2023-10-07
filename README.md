@@ -13,7 +13,7 @@ starter. Then I would make the predictions by using the averaged data to make th
 
 Right now it only predicts pitcher stats. 
 
-Clayton Kershaw 2024 predicted stats
+Clayton Kershaw 2024 predicted stats (Easy to see in code part of the read me)
 
   G	    GS	    W	    L	    SV	 IP	   H	  R	    ER	BB	SO	 HR	 HBP	ERA	    AB	 2B	 3B	 GDP	Str	 StL	 StS	 GB/FB	LD	PU	  WHIP	  BAbip	 SO9	SO/W
 0	26.7	24.2	10.49	4.99	0.01	140.0	117	 50	    46	30	151	 14	  6	  2.76	 529	 21	  2	 10	 0.67	 0.17	 0.13	 0.45  0.23	0.07	1.0118	0.278	 9.7	4.56
