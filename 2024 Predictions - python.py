@@ -21,14 +21,12 @@ from sklearn.ensemble import RandomForestRegressor
 
 # pitchers = pd.concat([pit2019, pit2021, pit2022, pit2023])
 
-# #try batters later - it may have blocked me
 # hit2019 = batting_stats_bref(2019)
-# hit2020 = batting_stats_bref(2020)
 # hit2021 = batting_stats_bref(2021)
 # hit2022 = batting_stats_bref(2022)
 # hit2023 = batting_stats_bref(2023)
 
-# batters = pd.concat([hit2019, hit2020, hit2021, hit2022, hit2023])
+# batters = pd.concat([hit2019, hit2021, hit2022, hit2023])
 
 
 # pitchers.to_csv(r'C:\Users\brkea\Desktop\19-23_pitchers_season_stats.csv', index=False, sep=',', encoding='utf-8')
