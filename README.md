@@ -1,6 +1,6 @@
 # 2024-Predictions
 
-This was my attempt only using past data to try an predict next seasons stats. It's definitely not the most sophisticated way to go about doing it.
+This was my attempt using only past data to try an predict next seasons stats. It's definitely not the most sophisticated way to go about doing it.
 In the future I would like to try using the more advanced/predictor stats like xERA, FIP, etc but with the data I had this was my best idea. 
 
 Methodology: 
